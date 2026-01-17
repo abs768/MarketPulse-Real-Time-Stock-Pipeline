@@ -1,0 +1,109 @@
+[0m07:50:54.490508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265E76E3590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265E7485310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265E77D5D90>]}
+
+
+============================== 07:50:54.555694 | f0d13f6b-2d64-425c-a4d9-5c8123158217 ==============================
+[0m07:50:54.555694 [info ] [MainThread]: Running with dbt=1.10.15
+[0m07:50:54.555694 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'use_colors': 'True', 'no_print': 'None', 'profiles_dir': 'C:\\Users\\saiku\\.dbt', 'write_json': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'invocation_command': 'dbt init dbt_stocks', 'cache_selected_only': 'False', 'target_path': 'None'}
+[0m07:50:54.929049 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\saiku\.dbt
+[0m07:50:54.957101 [debug] [MainThread]: Starter project path: C:\Users\saiku\real-time-stocks-mds\venv311\Lib\site-packages\dbt\include\starter_project
+[0m07:50:55.090699 [info ] [MainThread]: 
+Your new dbt project "dbt_stocks" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m07:50:55.091601 [info ] [MainThread]: Setting up your profile.
+[0m07:51:32.759089 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m07:51:32.760137 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m07:51:32.760137 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m07:57:19.006715 [info ] [MainThread]: Profile dbt_stocks written to C:\Users\saiku\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m07:57:19.011570 [debug] [MainThread]: Command `dbt init` succeeded at 07:57:19.006715 after 384.65 seconds
+[0m07:57:19.011570 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265E77C9ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265E179D550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265E8487D10>]}
+[0m07:57:19.011570 [debug] [MainThread]: Flushing usage events
+[0m07:57:20.618849 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:12:11.285823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAE99CDE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAE9A29A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAE9A2BB90>]}
+
+
+============================== 08:12:11.294945 | 7559ea08-1691-4020-a0c4-33014753040c ==============================
+[0m08:12:11.294945 [info ] [MainThread]: Running with dbt=1.10.15
+[0m08:12:11.294945 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'no_print': 'None', 'invocation_command': 'dbt run', 'write_json': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'static_parser': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'introspect': 'True', 'quiet': 'False', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'C:\\Users\\saiku\\.dbt', 'use_colors': 'True', 'printer_width': '80', 'target_path': 'None'}
+[0m08:12:11.294945 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\saiku\real-time-stocks-mds\dbt_stocks\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m08:12:11.294945 [debug] [MainThread]: Command `dbt run` failed at 08:12:11.294945 after 0.14 seconds
+[0m08:12:11.302766 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAE9A2BE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAE3973850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAE99D9090>]}
+[0m08:12:11.305394 [debug] [MainThread]: Flushing usage events
+[0m08:12:12.071266 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:13:46.044807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE78B76A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE78DD4E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE78DD4D50>]}
+
+
+============================== 08:13:46.055226 | a5b97b57-c8e7-4e38-b330-22df372e9138 ==============================
+[0m08:13:46.055226 [info ] [MainThread]: Running with dbt=1.10.15
+[0m08:13:46.055226 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\saiku\\.dbt', 'use_colors': 'True', 'warn_error': 'None', 'log_path': 'logs', 'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'version_check': 'True', 'introspect': 'True', 'quiet': 'False', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'invocation_command': 'dbt init', 'printer_width': '80', 'write_json': 'True'}
+[0m08:14:00.644981 [error] [MainThread]: Encountered an error:
+
+[0m08:14:00.755954 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\saiku\real-time-stocks-mds\venv311\Lib\site-packages\dbt\cli\requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saiku\real-time-stocks-mds\venv311\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saiku\real-time-stocks-mds\venv311\Lib\site-packages\dbt\cli\main.py", line 483, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\saiku\real-time-stocks-mds\venv311\Lib\site-packages\dbt\task\init.py", line 324, in run
+    project_name = self.get_valid_project_name()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saiku\real-time-stocks-mds\venv311\Lib\site-packages\dbt\task\init.py", line 278, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saiku\real-time-stocks-mds\venv311\Lib\site-packages\click\termui.py", line 171, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saiku\real-time-stocks-mds\venv311\Lib\site-packages\click\termui.py", line 154, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m08:14:00.758744 [debug] [MainThread]: Command `dbt init` failed at 08:14:00.758744 after 14.83 seconds
+[0m08:14:00.758744 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE73DD3950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE73DD3990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE78DC9910>]}
+[0m08:14:00.760756 [debug] [MainThread]: Flushing usage events
+[0m08:14:01.515510 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:14:40.774044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029F5AA05ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029F5FD008D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029F5FCD5C50>]}
+
+
+============================== 08:14:40.783924 | 4769ea15-7fab-40ee-9c1a-71dc5dcd59e4 ==============================
+[0m08:14:40.783924 [info ] [MainThread]: Running with dbt=1.10.15
+[0m08:14:40.783924 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\saiku\\.dbt', 'log_format': 'default', 'invocation_command': 'dbt init dbt_stocks', 'target_path': 'None', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'use_colors': 'True', 'printer_width': '80', 'write_json': 'True'}
+[0m08:14:40.814806 [info ] [MainThread]: A project called dbt_stocks already exists here.
+[0m08:14:40.814806 [debug] [MainThread]: Command `dbt init` succeeded at 08:14:40.814806 after 0.17 seconds
+[0m08:14:40.814806 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029F5DFFF550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029F5F984650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029F5A923490>]}
+[0m08:14:40.814806 [debug] [MainThread]: Flushing usage events
+[0m08:14:41.764839 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:14:59.047927 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211C3B28ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211C3B2AD50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211C3B2ADD0>]}
+
+
+============================== 08:14:59.056204 | 024a9f11-b41e-4709-8c70-b7af908cbb01 ==============================
+[0m08:14:59.056204 [info ] [MainThread]: Running with dbt=1.10.15
+[0m08:14:59.058241 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\saiku\\.dbt', 'target_path': 'None', 'invocation_command': 'dbt run', 'warn_error': 'None', 'indirect_selection': 'eager', 'partial_parse': 'True', 'log_path': 'logs', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'introspect': 'True', 'quiet': 'False', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'use_colors': 'True', 'printer_width': '80', 'write_json': 'True'}
+[0m08:14:59.058241 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\saiku\real-time-stocks-mds\dbt_stocks\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m08:14:59.062775 [debug] [MainThread]: Command `dbt run` failed at 08:14:59.062775 after 0.18 seconds
+[0m08:14:59.062775 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211C3ACD790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211C3B49350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211C1DFF850>]}
+[0m08:14:59.064786 [debug] [MainThread]: Flushing usage events
+[0m08:14:59.998156 [debug] [MainThread]: An error was encountered while trying to flush usage events
