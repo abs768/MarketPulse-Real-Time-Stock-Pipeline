@@ -29,7 +29,7 @@
 
 ## 🏗️ System Architecture
 
-![Architecture Diagram](./01_architecture.png)
+![Architecture Diagram](./assets/01_architecture.png)
 
 ### Data Flow
 
@@ -68,7 +68,7 @@ Streamlit Dashboard
 
 ### Medallion Architecture (Bronze → Silver → Gold)
 
-![Medallion Layers](./03_medallion_layers.png)
+![Medallion Layers](./assets/03_medallion_layers.png)
 
 #### Bronze Layer: Raw Ingestion
 **Purpose:** Preserve source data fidelity, enable reprocessing
@@ -154,7 +154,7 @@ GROUP BY symbol, DATE(fetch_time);
 
 ### Airflow DAG: `minio_to_snowflake`
 
-![Airflow DAG](./02_airflow_dag.png)
+![Airflow DAG](./assets/02_airflow_dag.png)
 
 **Performance Metrics (25 runs):**
 - ✅ Success rate: **96%** (24/25 runs)
@@ -223,7 +223,7 @@ Built with Streamlit + Snowflake connector for sub-second query performance.
 
 ### View 1: OHLC Candlestick Chart
 
-![TSLA OHLC](./04_tsla_ohlc.png)
+![TSLA OHLC](./assets/04_tsla_ohlc.png)
 
 **Features:**
 - Real-time candlestick visualization (Open, High, Low, Close)
@@ -261,7 +261,7 @@ st.plotly_chart(fig)
 
 ### View 2: Daily Returns Distribution
 
-![Returns Distribution](./05_returns_distribution.png)
+![Returns Distribution](./assets/05_returns_distribution.png)
 
 **Insight:** Normal distribution centered near 0%, indicating efficient market hypothesis holds for this dataset.
 
@@ -276,13 +276,13 @@ WHERE symbol = 'TSLA';
 
 ### View 3: Cumulative Performance
 
-![Cumulative Returns](./06_cumulative_returns.png)
+![Cumulative Returns](./assets/06_cumulative_returns.png)
 
 **Use Case:** Track compounded returns over holding period. Shows -15% drawdown in Nov 2025.
 
 ### View 4: Cross-Stock Comparison
 
-![Stock Comparison](./07_stock_comparison.png)
+![Stock Comparison](./assets/07_stock_comparison.png)
 
 **Normalization:** Base-100 indexing for apples-to-apples comparison across different price scales.
 
@@ -290,7 +290,7 @@ WHERE symbol = 'TSLA';
 
 ### View 5: Volatility Analysis
 
-![Volatility Analysis](./08_volatility_analysis.png)
+![Volatility Analysis](./assets/08_volatility_analysis.png)
 
 **Interactive Controls:**
 - Rolling window: 5-60 days (slider)
